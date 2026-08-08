@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+
+    <script>
+
+     let number = 6;
+     let chances = 3;
+
+     while(chances > 0){
+        
+        let num = Number(prompt("Guess the number between 1 to 10"));
+
+        if(num < number){
+            alert("Too Low");
+        }
+        else if(num > number){
+            alert("Too High");
+        }
+        else{
+             alert("🎉🎊🎉 CONGRATULATIONS! 🎉🎊🎉\n\n🏆 You Won, Champ! 🏆\n🥳🥳🥳 PARTY TIME! 🥳🥳🥳");
+              break;
+        }
+
+          chances--;
+
+        }
+
+       if (chances === 0) { 
+          alert("💥 GAME OVER 💥\n\n😢 Better luck next time!\n🎯 The number was " + number);
+     }
+     
+     
+
+    </script>
+    
+</body>
+</html>
